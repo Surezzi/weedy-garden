@@ -1,0 +1,248 @@
+[gd_scene format=3 uid="uid://bfg53jakniofk"]
+
+[node name="Vegetables" type="Node2D" unique_id=1762859881]
+
+[node name="trail" type="ColorRect" parent="." unique_id=1271106574]
+offset_left = 285.0
+offset_right = 366.0
+offset_bottom = 648.0
+color = Color(0.23586145, 0.2358706, 0.16572875, 1)
+
+[node name="ColorRect" type="ColorRect" parent="trail" unique_id=1472153386]
+layout_mode = 0
+offset_left = 333.0
+offset_right = 414.0
+offset_bottom = 648.0
+color = Color(0.23586145, 0.2358706, 0.16572875, 1)
+
+[node name="carrots" type="Node2D" parent="." unique_id=1459312647]
+
+[node name="carrot6" type="ColorRect" parent="carrots" unique_id=542093980]
+offset_left = 52.0
+offset_top = 194.0
+offset_right = 73.0
+offset_bottom = 234.0
+color = Color(0.95441014, 0.5530128, 0.12042353, 1)
+
+[node name="carrot" type="ColorRect" parent="carrots/carrot6" unique_id=1417984592]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -20.0
+offset_right = 14.0
+color = Color(0.37254903, 0.72156864, 0.050980393, 1)
+
+[node name="carrot5" type="ColorRect" parent="carrots" unique_id=1868509904]
+offset_left = 164.0
+offset_top = 360.0
+offset_right = 185.0
+offset_bottom = 400.0
+color = Color(0.95441014, 0.5530128, 0.12042353, 1)
+
+[node name="carrot" type="ColorRect" parent="carrots/carrot5" unique_id=1590283119]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -20.0
+offset_right = 14.0
+color = Color(0.37254903, 0.72156864, 0.050980393, 1)
+
+[node name="carrot4" type="ColorRect" parent="carrots" unique_id=457831197]
+offset_left = 167.0
+offset_top = 188.0
+offset_right = 188.0
+offset_bottom = 228.0
+color = Color(0.95441014, 0.5530128, 0.12042353, 1)
+
+[node name="carrot" type="ColorRect" parent="carrots/carrot4" unique_id=689180774]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -20.0
+offset_right = 14.0
+color = Color(0.37254903, 0.72156864, 0.050980393, 1)
+
+[node name="carrot3" type="ColorRect" parent="carrots" unique_id=1588025383]
+offset_left = 53.0
+offset_top = 359.0
+offset_right = 74.0
+offset_bottom = 399.0
+color = Color(0.95441014, 0.5530128, 0.12042353, 1)
+
+[node name="carrot" type="ColorRect" parent="carrots/carrot3" unique_id=1544543908]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -20.0
+offset_right = 14.0
+color = Color(0.37254903, 0.72156864, 0.050980393, 1)
+
+[node name="carrot2" type="ColorRect" parent="carrots" unique_id=1309914844]
+offset_left = 160.0
+offset_top = 61.0
+offset_right = 181.0
+offset_bottom = 101.0
+color = Color(0.95441014, 0.5530128, 0.12042353, 1)
+
+[node name="carrot" type="ColorRect" parent="carrots/carrot2" unique_id=464765656]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -20.0
+offset_right = 14.0
+color = Color(0.37254903, 0.72156864, 0.050980393, 1)
+
+[node name="carrot" type="ColorRect" parent="carrots" unique_id=13316885]
+offset_left = 52.0
+offset_top = 61.0
+offset_right = 73.0
+offset_bottom = 101.0
+color = Color(0.95441014, 0.5530128, 0.12042353, 1)
+
+[node name="carrot" type="ColorRect" parent="carrots/carrot" unique_id=989412969]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -20.0
+offset_right = 14.0
+color = Color(0.37254903, 0.72156864, 0.050980393, 1)
+
+[node name="carrot7" type="ColorRect" parent="carrots" unique_id=1648240148]
+offset_left = 163.0
+offset_top = 497.0
+offset_right = 184.0
+offset_bottom = 537.0
+color = Color(0.95441014, 0.5530128, 0.12042353, 1)
+
+[node name="carrot" type="ColorRect" parent="carrots/carrot7" unique_id=1795591450]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -20.0
+offset_right = 14.0
+color = Color(0.37254903, 0.72156864, 0.050980393, 1)
+
+[node name="carrot8" type="ColorRect" parent="carrots" unique_id=1047026075]
+offset_left = 55.0
+offset_top = 497.0
+offset_right = 76.0
+offset_bottom = 537.0
+color = Color(0.95441014, 0.5530128, 0.12042353, 1)
+
+[node name="carrot" type="ColorRect" parent="carrots/carrot8" unique_id=2119492433]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -20.0
+offset_right = 14.0
+color = Color(0.37254903, 0.72156864, 0.050980393, 1)
+
+[node name="onions" type="Node2D" parent="." unique_id=1193488250]
+position = Vector2(403, 59)
+
+[node name="onion" type="ColorRect" parent="onions" unique_id=2105981461]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.969464, 0.8218373, 0.6870552, 1)
+
+[node name="onion" type="ColorRect" parent="onions/onion" unique_id=1436122540]
+layout_mode = 0
+offset_left = 16.0
+offset_top = -53.0
+offset_right = 23.0
+offset_bottom = 1.0
+color = Color(4.1151793e-06, 0.62368673, 0.09613345, 1)
+
+[node name="onion2" type="ColorRect" parent="onions" unique_id=61070293]
+offset_left = 117.0
+offset_top = -1.0
+offset_right = 157.0
+offset_bottom = 39.0
+color = Color(0.969464, 0.8218373, 0.6870552, 1)
+
+[node name="onion" type="ColorRect" parent="onions/onion2" unique_id=762449629]
+layout_mode = 0
+offset_left = 16.0
+offset_top = -53.0
+offset_right = 23.0
+offset_bottom = 1.0
+color = Color(4.1151793e-06, 0.62368673, 0.09613345, 1)
+
+[node name="onion3" type="ColorRect" parent="onions" unique_id=1513745114]
+offset_top = 128.0
+offset_right = 40.0
+offset_bottom = 168.0
+color = Color(0.969464, 0.8218373, 0.6870552, 1)
+
+[node name="onion" type="ColorRect" parent="onions/onion3" unique_id=1613230068]
+layout_mode = 0
+offset_left = 16.0
+offset_top = -53.0
+offset_right = 23.0
+offset_bottom = 1.0
+color = Color(4.1151793e-06, 0.62368673, 0.09613345, 1)
+
+[node name="onion4" type="ColorRect" parent="onions" unique_id=455983548]
+offset_left = 117.0
+offset_top = 127.0
+offset_right = 157.0
+offset_bottom = 167.0
+color = Color(0.969464, 0.8218373, 0.6870552, 1)
+
+[node name="onion" type="ColorRect" parent="onions/onion4" unique_id=1695521523]
+layout_mode = 0
+offset_left = 16.0
+offset_top = -53.0
+offset_right = 23.0
+offset_bottom = 1.0
+color = Color(4.1151793e-06, 0.62368673, 0.09613345, 1)
+
+[node name="onion5" type="ColorRect" parent="onions" unique_id=1954487928]
+offset_top = 290.0
+offset_right = 40.0
+offset_bottom = 330.0
+color = Color(0.969464, 0.8218373, 0.6870552, 1)
+
+[node name="onion" type="ColorRect" parent="onions/onion5" unique_id=207069959]
+layout_mode = 0
+offset_left = 16.0
+offset_top = -53.0
+offset_right = 23.0
+offset_bottom = 1.0
+color = Color(4.1151793e-06, 0.62368673, 0.09613345, 1)
+
+[node name="onion6" type="ColorRect" parent="onions" unique_id=1875378809]
+offset_left = 117.0
+offset_top = 289.0
+offset_right = 157.0
+offset_bottom = 329.0
+color = Color(0.969464, 0.8218373, 0.6870552, 1)
+
+[node name="onion" type="ColorRect" parent="onions/onion6" unique_id=2050794668]
+layout_mode = 0
+offset_left = 16.0
+offset_top = -53.0
+offset_right = 23.0
+offset_bottom = 1.0
+color = Color(4.1151793e-06, 0.62368673, 0.09613345, 1)
+
+[node name="onion7" type="ColorRect" parent="onions" unique_id=885299806]
+offset_top = 446.0
+offset_right = 40.0
+offset_bottom = 486.0
+color = Color(0.969464, 0.8218373, 0.6870552, 1)
+
+[node name="onion" type="ColorRect" parent="onions/onion7" unique_id=2111159616]
+layout_mode = 0
+offset_left = 16.0
+offset_top = -53.0
+offset_right = 23.0
+offset_bottom = 1.0
+color = Color(4.1151793e-06, 0.62368673, 0.09613345, 1)
+
+[node name="onion8" type="ColorRect" parent="onions" unique_id=721191715]
+offset_left = 117.0
+offset_top = 445.0
+offset_right = 157.0
+offset_bottom = 485.0
+color = Color(0.969464, 0.8218373, 0.6870552, 1)
+
+[node name="onion" type="ColorRect" parent="onions/onion8" unique_id=1255815193]
+layout_mode = 0
+offset_left = 16.0
+offset_top = -53.0
+offset_right = 23.0
+offset_bottom = 1.0
+color = Color(4.1151793e-06, 0.62368673, 0.09613345, 1)

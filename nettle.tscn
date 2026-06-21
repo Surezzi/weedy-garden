@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://dyf62mbmily20"]
+
+[ext_resource type="Script" uid="uid://ctdbtsuu7uv65" path="res://nettle.gd" id="1_3ue6a"]
+[ext_resource type="Shader" uid="uid://cti8uitoogd5d" path="res://nettle.gdshader" id="1_xmm63"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1bvp3"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rfd5q"]
+shader = ExtResource("1_xmm63")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xmm63"]
+shader = ExtResource("1_xmm63")
+
+[node name="Nettle" type="Node2D" unique_id=1235270041]
+material = SubResource("ShaderMaterial_1bvp3")
+script = ExtResource("1_3ue6a")
+
+[node name="super4ktexture" type="ColorRect" parent="." unique_id=1588488039]
+material = SubResource("ShaderMaterial_rfd5q")
+offset_top = -95.0
+offset_right = 4.0
+color = Color(0.334194, 0.79165006, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="super4ktexture" unique_id=627759031]
+material = SubResource("ShaderMaterial_xmm63")
+layout_mode = 0
+offset_left = 8.0
+offset_top = 3.000002
+offset_right = 16.11253
+offset_bottom = 14.722185
+rotation = 0.7340145
+color = Color(0.334194, 0.79165006, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="super4ktexture/ColorRect" unique_id=436801244]
+material = SubResource("ShaderMaterial_xmm63")
+layout_mode = 0
+offset_left = 4.5759907
+offset_top = 34.929363
+offset_right = 12.688524
+offset_bottom = 46.651546
+rotation = -1.578829
+color = Color(0.334194, 0.79165006, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="super4ktexture/ColorRect/ColorRect" unique_id=1721967873]
+material = SubResource("ShaderMaterial_xmm63")
+layout_mode = 0
+offset_left = 0.39603162
+offset_top = 29.066183
+offset_right = 8.508561
+offset_bottom = 40.78837
+rotation = 1.7655301
+color = Color(0.334194, 0.79165006, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="super4ktexture/ColorRect/ColorRect/ColorRect" unique_id=1451736243]
+material = SubResource("ShaderMaterial_xmm63")
+layout_mode = 0
+offset_left = 3.0196524
+offset_top = 27.420464
+offset_right = 11.132183
+offset_bottom = 39.142647
+rotation = 4.8181243
+color = Color(0.334194, 0.79165006, 0, 1)
+
+[node name="Timer" type="Timer" parent="." unique_id=1182011950]
+wait_time = 3.0
+autostart = true
+
+[node name="DeadTimer" type="Timer" parent="." unique_id=1562730619]
+wait_time = 10.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="DeadTimer" to="." method="_on_dead_timer_timeout"]

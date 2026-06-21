@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://dqn0sfqbho5py"]
+
+[node name="bush" type="Node2D" unique_id=1365250800]
+z_index = 1
+
+[node name="bush" type="ColorRect" parent="." unique_id=796138508]
+offset_right = 133.0
+offset_bottom = 133.0
+color = Color(0.2682309, 0.5689827, 0.13156632, 1)
+
+[node name="bush" type="ColorRect" parent="bush" unique_id=211933051]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 15.0
+offset_bottom = 16.0
+color = Color(0.90573233, 0, 0.18889388, 1)
+
+[node name="bush2" type="ColorRect" parent="bush" unique_id=1477598456]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 18.0
+offset_right = 44.0
+offset_bottom = 24.0
+color = Color(0.90573233, 0, 0.18889388, 1)
+
+[node name="bush3" type="ColorRect" parent="bush" unique_id=1917743038]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 38.0
+offset_right = 87.0
+offset_bottom = 44.0
+color = Color(0.90573233, 0, 0.18889388, 1)
+
+[node name="bush4" type="ColorRect" parent="bush" unique_id=467770498]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 13.0
+offset_right = 75.0
+offset_bottom = 19.0
+color = Color(0.90573233, 0, 0.18889388, 1)
+
+[node name="bush5" type="ColorRect" parent="bush" unique_id=80850170]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 13.0
+offset_right = 113.0
+offset_bottom = 19.0
+color = Color(0.90573233, 0, 0.18889388, 1)
+
+[node name="bush6" type="ColorRect" parent="bush" unique_id=1990781446]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 45.0
+offset_right = 21.0
+offset_bottom = 51.0
+color = Color(0.90573233, 0, 0.18889388, 1)
+
+[node name="bush7" type="ColorRect" parent="bush" unique_id=1658356451]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 51.0
+offset_right = 55.0
+offset_bottom = 57.0
+color = Color(0.90573233, 0, 0.18889388, 1)
+
+[node name="bush8" type="ColorRect" parent="bush" unique_id=625088580]
+layout_mode = 0
+offset_left = 102.0
+offset_top = 63.0
+offset_right = 107.0
+offset_bottom = 69.0
+color = Color(0.90573233, 0, 0.18889388, 1)
+
+[node name="bush9" type="ColorRect" parent="bush" unique_id=253038340]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 69.0
+offset_right = 75.0
+offset_bottom = 75.0
+color = Color(0.90573233, 0, 0.18889388, 1)
+
+[node name="bush10" type="ColorRect" parent="bush" unique_id=820952608]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 73.0
+offset_right = 33.0
+offset_bottom = 79.0
+color = Color(0.90573233, 0, 0.18889388, 1)
+
+[node name="bush11" type="ColorRect" parent="bush" unique_id=1271396295]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 97.0
+offset_right = 117.0
+offset_bottom = 103.0
+color = Color(0.90573233, 0, 0.18889388, 1)
+
+[node name="bush12" type="ColorRect" parent="bush" unique_id=940360894]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 110.0
+offset_right = 18.0
+offset_bottom = 116.0
+color = Color(0.90573233, 0, 0.18889388, 1)
+
+[node name="bush13" type="ColorRect" parent="bush" unique_id=822862678]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 108.0
+offset_right = 69.0
+offset_bottom = 114.0
+color = Color(0.90573233, 0, 0.18889388, 1)

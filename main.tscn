@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://cpgdhljaaovxu"]
+
+[ext_resource type="Script" uid="uid://bxju35jpb3n3c" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://bfg53jakniofk" path="res://vegetables.tscn" id="1_ig7tw"]
+[ext_resource type="Shader" uid="uid://conevaso8kggr" path="res://accessible_area_shader.gdshader" id="4_1bvp3"]
+[ext_resource type="Script" uid="uid://blhsdlwad0j7q" path="res://camera_control.gd" id="4_lquwl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r20ou"]
+size = Vector2(358, 655)
+
+[sub_resource type="LabelSettings" id="LabelSettings_r20ou"]
+font_size = 28
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r20ou"]
+shader = ExtResource("4_1bvp3")
+shader_parameter/shader_enable = true
+
+[node name="main" type="Node2D" unique_id=1215730996]
+script = ExtResource("1_h2yge")
+
+[node name="grass" type="ColorRect" parent="." unique_id=308618345]
+offset_left = -303.0
+offset_top = -208.0
+offset_right = 1422.0
+offset_bottom = 878.0
+mouse_filter = 2
+color = Color(0.28627452, 0.5568628, 0.28627452, 1)
+
+[node name="Vegetables" parent="." unique_id=1762859881 instance=ExtResource("1_ig7tw")]
+position = Vector2(457, 0)
+
+[node name="accessible area" type="Area2D" parent="." unique_id=1912517459]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="accessible area" unique_id=1295627992]
+position = Vector2(176, 324.5)
+shape = SubResource("RectangleShape2D_r20ou")
+
+[node name="Label" type="Label" parent="." unique_id=975278656]
+offset_left = 3.0
+offset_top = 11.0
+offset_right = 371.0
+offset_bottom = 53.0
+text = "Select the spawn location"
+label_settings = SubResource("LabelSettings_r20ou")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1803784358]
+material = SubResource("ShaderMaterial_r20ou")
+offset_right = 355.0
+offset_bottom = 648.0
+mouse_filter = 2
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1528285128]
+position = Vector2(576, 324)
+limit_left = -172
+limit_top = -120
+limit_right = 1296
+limit_bottom = 809
+limit_smoothed = true
+position_smoothing_enabled = true
+script = ExtResource("4_lquwl")
+
+[connection signal="mouse_entered" from="accessible area" to="." method="_on_accessible_area_mouse_entered"]
+[connection signal="mouse_exited" from="accessible area" to="." method="_on_accessible_area_mouse_exited"]
