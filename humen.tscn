@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b7pe6uonnoohl"]
 
-[ext_resource type="Script" uid="uid://y3bvru40joib" path="res://humen.gd" id="1_j7bp5"]
+[ext_resource type="Script" uid="uid://y3bvru40joib" path="res://scripts/humen.gd" id="1_j7bp5"]
 
 [node name="Humen" type="Node2D" unique_id=1128548982]
 script = ExtResource("1_j7bp5")

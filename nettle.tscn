@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dyf62mbmily20"]
 
-[ext_resource type="Script" uid="uid://ctdbtsuu7uv65" path="res://nettle.gd" id="1_3ue6a"]
+[ext_resource type="Script" uid="uid://ctdbtsuu7uv65" path="res://scripts/nettle.gd" id="1_3ue6a"]
 [ext_resource type="Shader" uid="uid://cti8uitoogd5d" path="res://nettle.gdshader" id="1_xmm63"]
 [ext_resource type="Texture2D" uid="uid://ci4vbs02sbr0j" path="res://texture/NettleBabyFIXED.png" id="3_7rrut"]
 [ext_resource type="Texture2D" uid="uid://ctp5ajhgi76mv" path="res://texture/Nettle2FIXED.png" id="3_rfd5q"]
