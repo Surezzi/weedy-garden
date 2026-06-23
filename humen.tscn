@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://y3bvru40joib" path="res://scripts/humen.gd" id="1_j7bp5"]
 
 [node name="Humen" type="Node2D" unique_id=1128548982]
+position = Vector2(-32, -61)
 script = ExtResource("1_j7bp5")
 
 [node name="4ktexture" type="ColorRect" parent="." unique_id=1928512587]

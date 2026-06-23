@@ -309,16 +309,17 @@ autoplay = true
 [node name="UI" type="CanvasLayer" parent="." unique_id=578203969]
 
 [node name="Label" type="Label" parent="UI" unique_id=2007353297]
-offset_left = 925.0
-offset_top = 560.0
-offset_right = 1151.0
-offset_bottom = 643.0
+offset_left = 849.0
+offset_top = 559.0
+offset_right = 1075.0
+offset_bottom = 642.0
 text = "Score: 0"
 label_settings = SubResource("LabelSettings_dujfe")
 script = ExtResource("6_272bh")
 
 [node name="Humen" parent="." unique_id=1128548982 instance=ExtResource("6_5vw27")]
-position = Vector2(762, 3)
+position = Vector2(758, 53)
+detection_radius = 110.0
 
 [connection signal="mouse_entered" from="accessible area" to="." method="_on_accessible_area_mouse_entered"]
 [connection signal="mouse_exited" from="accessible area" to="." method="_on_accessible_area_mouse_exited"]
