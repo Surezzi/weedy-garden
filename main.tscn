@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://blhsdlwad0j7q" path="res://scripts/camera_control.gd" id="4_lquwl"]
 [ext_resource type="AudioStream" uid="uid://sjkj3qna3w56" path="res://music/stupid_game_music.wav" id="5_lquwl"]
 [ext_resource type="Texture2D" uid="uid://tl1ned2yx3i2" path="res://texture/TileMap1.png" id="6_7mycd"]
+[ext_resource type="Script" uid="uid://dnm2paa5hlmfr" path="res://scripts/score_label.gd" id="6_272bh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_272bh"]
 texture = ExtResource("6_7mycd")
@@ -232,6 +233,9 @@ font_size = 28
 shader = ExtResource("4_1bvp3")
 shader_parameter/shader_enable = true
 
+[sub_resource type="LabelSettings" id="LabelSettings_dujfe"]
+font_size = 60
+
 [node name="main" type="Node2D" unique_id=1215730996]
 script = ExtResource("1_h2yge")
 
@@ -284,6 +288,17 @@ script = ExtResource("4_lquwl")
 stream = ExtResource("5_lquwl")
 volume_db = -13.607
 autoplay = true
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=578203969]
+
+[node name="Label" type="Label" parent="UI" unique_id=2007353297]
+offset_left = 925.0
+offset_top = 560.0
+offset_right = 1151.0
+offset_bottom = 643.0
+text = "Score: 0"
+label_settings = SubResource("LabelSettings_dujfe")
+script = ExtResource("6_272bh")
 
 [connection signal="mouse_entered" from="accessible area" to="." method="_on_accessible_area_mouse_entered"]
 [connection signal="mouse_exited" from="accessible area" to="." method="_on_accessible_area_mouse_exited"]
