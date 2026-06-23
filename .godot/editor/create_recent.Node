@@ -1,0 +1,14 @@
+Label
+CanvasLayer
+ColorRect
+Timer
+TileMapLayer
+AnimatedSprite2D
+Sprite2D
+Button
+TextureButton
+AudioStreamPlayer
+CollisionShape2D
+Area2D
+Node2D
+Node
