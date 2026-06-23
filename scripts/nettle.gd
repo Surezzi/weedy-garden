@@ -11,9 +11,15 @@ const MAX_COUNT_NETTLE := 400
 var spawned_child: int = 0
 var baby: bool = true
 
+# База для будущего стелса.
+# Пока игрок этим напрямую не управляет.
+@export var base_visibility: float = 1.0
+@export var size_visibility_modifier: float = 1.0
+@export var mimicry_modifier: float = 1.0
+
 
 func _ready() -> void:
-	pass
+	add_to_group("nettles")
 
 
 func _process(_delta: float) -> void:
@@ -28,7 +34,7 @@ func reproduction() -> void:
 		timer.stop()
 		return
 	
-	var all_nettles = get_parent().get_children()
+	var all_nettles = get_tree().get_nodes_in_group("nettles")
 	if all_nettles.size() >= MAX_COUNT_NETTLE:
 		return
 	
@@ -44,6 +50,24 @@ func reproduction() -> void:
 	spawned_child += 1
 	
 	ScoreManager.add_points(ScoreManager.NEW_NETTLE_POINTS)
+
+
+func get_detection_score() -> float:
+	var age_modifier := 1.0
+	
+	# Молодые ростки менее заметны.
+	if baby:
+		age_modifier = 0.35
+	
+	return base_visibility * size_visibility_modifier * mimicry_modifier * age_modifier
+
+
+func is_detectable_by(detection_threshold: float) -> bool:
+	return get_detection_score() >= detection_threshold
+
+
+func destroy_by_gardener() -> void:
+	queue_free()
 
 
 func _on_timer_timeout() -> void:

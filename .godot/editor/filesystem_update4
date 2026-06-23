@@ -1,4 +1,5 @@
 res://main.tscn
 res://nettle.gdshader
 res://accessible_area_shader.gdshader
-res://scripts/camera_control.gd
+res://scripts/nettle.gd
+res://scripts/humen.gd
