@@ -282,6 +282,7 @@ script = ExtResource("4_lquwl")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1453349096]
 stream = ExtResource("5_lquwl")
+volume_db = -13.607
 autoplay = true
 
 [connection signal="mouse_entered" from="accessible area" to="." method="_on_accessible_area_mouse_entered"]
