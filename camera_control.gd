@@ -11,9 +11,9 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("mouse_zoom_plus"):
-		zoom += Vector2(0.05, 0.05)
+		zoom += Vector2(1.0, 1.0)*delta
 	if Input.is_action_just_pressed("mouse_zoom_minus"):
-		zoom -= Vector2(0.05, 0.05)
+		zoom -= Vector2(1.0, 1.0)*delta
 	zoom = zoom.clamp(MIN_ZOOM, MAX_ZOOM)
 	
 	if Input.is_action_pressed("w"):

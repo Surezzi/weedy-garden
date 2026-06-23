@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b7pe6uonnoohl"]
+
+[ext_resource type="Script" uid="uid://y3bvru40joib" path="res://humen.gd" id="1_j7bp5"]
+
+[node name="Humen" type="Node2D" unique_id=1128548982]
+script = ExtResource("1_j7bp5")
+
+[node name="4ktexture" type="ColorRect" parent="." unique_id=1928512587]
+offset_right = 64.0
+offset_bottom = 128.0
+
+[node name="ColorRect" type="ColorRect" parent="4ktexture" unique_id=1598191673]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 251.68298
+rotation = 0.70810074
+scale = Vector2(0.2514299, 0.2514299)
+
+[node name="ColorRect2" type="ColorRect" parent="4ktexture" unique_id=253206192]
+layout_mode = 0
+offset_left = 64.0
+offset_right = 128.0
+offset_bottom = 251.68298
+rotation = -0.7257742
+scale = Vector2(-0.24020341, 0.2514299)

@@ -2,72 +2,57 @@
 
 [ext_resource type="Script" uid="uid://ctdbtsuu7uv65" path="res://nettle.gd" id="1_3ue6a"]
 [ext_resource type="Shader" uid="uid://cti8uitoogd5d" path="res://nettle.gdshader" id="1_xmm63"]
+[ext_resource type="Texture2D" uid="uid://ci4vbs02sbr0j" path="res://texture/NettleBabyFIXED.png" id="3_7rrut"]
+[ext_resource type="Texture2D" uid="uid://ctp5ajhgi76mv" path="res://texture/Nettle2FIXED.png" id="3_rfd5q"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1bvp3"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_rfd5q"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7rrut"]
 shader = ExtResource("1_xmm63")
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_xmm63"]
-shader = ExtResource("1_xmm63")
+[sub_resource type="SpriteFrames" id="SpriteFrames_r20ou"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_7rrut")
+}],
+"loop": 1,
+"name": &"baby",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_rfd5q")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Nettle" type="Node2D" unique_id=1235270041]
 material = SubResource("ShaderMaterial_1bvp3")
 script = ExtResource("1_3ue6a")
 
-[node name="super4ktexture" type="ColorRect" parent="." unique_id=1588488039]
-material = SubResource("ShaderMaterial_rfd5q")
-offset_top = -95.0
-offset_right = 4.0
-color = Color(0.334194, 0.79165006, 0, 1)
-
-[node name="ColorRect" type="ColorRect" parent="super4ktexture" unique_id=627759031]
-material = SubResource("ShaderMaterial_xmm63")
-layout_mode = 0
-offset_left = 8.0
-offset_top = 3.000002
-offset_right = 16.11253
-offset_bottom = 14.722185
-rotation = 0.7340145
-color = Color(0.334194, 0.79165006, 0, 1)
-
-[node name="ColorRect" type="ColorRect" parent="super4ktexture/ColorRect" unique_id=436801244]
-material = SubResource("ShaderMaterial_xmm63")
-layout_mode = 0
-offset_left = 4.5759907
-offset_top = 34.929363
-offset_right = 12.688524
-offset_bottom = 46.651546
-rotation = -1.578829
-color = Color(0.334194, 0.79165006, 0, 1)
-
-[node name="ColorRect" type="ColorRect" parent="super4ktexture/ColorRect/ColorRect" unique_id=1721967873]
-material = SubResource("ShaderMaterial_xmm63")
-layout_mode = 0
-offset_left = 0.39603162
-offset_top = 29.066183
-offset_right = 8.508561
-offset_bottom = 40.78837
-rotation = 1.7655301
-color = Color(0.334194, 0.79165006, 0, 1)
-
-[node name="ColorRect" type="ColorRect" parent="super4ktexture/ColorRect/ColorRect/ColorRect" unique_id=1451736243]
-material = SubResource("ShaderMaterial_xmm63")
-layout_mode = 0
-offset_left = 3.0196524
-offset_top = 27.420464
-offset_right = 11.132183
-offset_bottom = 39.142647
-rotation = 4.8181243
-color = Color(0.334194, 0.79165006, 0, 1)
-
 [node name="Timer" type="Timer" parent="." unique_id=1182011950]
-wait_time = 3.0
+wait_time = 10.0
 autostart = true
 
 [node name="DeadTimer" type="Timer" parent="." unique_id=1562730619]
-wait_time = 10.0
+wait_time = 30.0
+autostart = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2022263638]
+y_sort_enabled = true
+material = SubResource("ShaderMaterial_7rrut")
+position = Vector2(0, -39.999996)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_r20ou")
+animation = &"baby"
+
+[node name="TimerGen" type="Timer" parent="." unique_id=1948793138]
+wait_time = 5.0
 autostart = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="DeadTimer" to="." method="_on_dead_timer_timeout"]
+[connection signal="timeout" from="TimerGen" to="." method="_on_timer_gen_timeout"]

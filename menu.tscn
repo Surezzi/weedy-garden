@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://8d60q5yk238w"]
+
+[node name="Control" type="Control" unique_id=1501296453]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="background" type="ColorRect" parent="." unique_id=959699347]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 654.0
+mouse_filter = 2
+color = Color(0.41598046, 0.41598043, 0.4159804, 1)
+
+[node name="Button" type="Button" parent="." unique_id=773412302]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 256.0
+offset_right = 704.0
+offset_bottom = 384.0
+text = "Start"
+
+[node name="Button2" type="Button" parent="." unique_id=524557048]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 448.0
+offset_right = 640.0
+offset_bottom = 512.0
+text = "Exit"
